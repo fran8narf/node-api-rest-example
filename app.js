@@ -5,7 +5,7 @@ var express = require("express"),
 	mongoose = require("mongoose");
 
 app.use( bodyParser.urlencoded({ extended: false}) );
-app.use( bodyParser.jseon());
+app.use( bodyParser.json());
 app.use(methodOverride());
 
 var router = express.Router();
